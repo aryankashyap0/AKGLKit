@@ -1,5 +1,5 @@
 //
-//  AKGLKView.h
+//  AKGLKContext.h
 //  AKGLKKit
 //
 //  Copyright (c) 2016 Aryan Kashyap. All rights reserved.
