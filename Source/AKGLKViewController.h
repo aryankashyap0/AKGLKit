@@ -6,6 +6,8 @@
 //  Copyright © 2016 Aryan Kashyap. All rights reserved.
 //
 
+/**** This is an alternative for  GLKit's GLKViewController Class ****/
+
 #import <UIKit/UIKit.h>
 #import "AKGLKView.h"
 
