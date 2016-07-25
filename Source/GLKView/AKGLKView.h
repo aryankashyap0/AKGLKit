@@ -9,8 +9,8 @@
 /**** This is an alternative for  GLKit's GLKView Class ****/
 
 #import <UIKit/UIKit.h>
-#import <OpenGLES/ES2/gl.h>
-#import <OpenGLES/ES2/glext.h>
+#import <OpenGLES/ES3/gl.h>
+#import <OpenGLES/ES3/glext.h>
 
 @class EAGLContext;
 @protocol AKGLKViewDelegate;
