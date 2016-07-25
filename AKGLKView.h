@@ -15,10 +15,9 @@
 
 /////////////////////////////////////////////////////////////////
 // Type for depth buffer formats.
-typedef enum
-{
-    AKGLKViewDrawableDepthFormatNone = 0,
-    ALGLKViewDrawableDepthFormat16,
+typedef enum {
+AKGLKViewDrawableDepthFormatNone = 0,
+ALGLKViewDrawableDepthFormat16,
 } AKGLKViewDrawableDepthFormat;
 
 
@@ -29,12 +28,12 @@ typedef enum
 
 @interface AKGLKView : UIView
 {
-    EAGLContext   *context;
-    GLuint        defaultFrameBuffer;
-    GLuint        colorRenderBuffer;
-    GLuint        depthRenderBuffer;
-    GLint         drawableWidth;
-    GLint         drawableHeight;
+    EAGLContext  *context;
+    GLuint  defaultFrameBuffer;
+    GLuint  colorRenderBuffer;
+    GLuint   depthRenderBuffer;
+    GLint    drawableWidth;
+    GLint   drawableHeight;
 }
 
 @property (nonatomic, weak) IBOutlet id <AKGLKViewDelegate> delegate;
@@ -44,7 +43,6 @@ typedef enum
 @property (nonatomic) AKGLKViewDrawableDepthFormat
 drawableDepthFormat;
 
-
 - (void)display;
 
 @end
@@ -52,7 +50,6 @@ drawableDepthFormat;
 #pragma mark - AKGLKViewDelegate
 
 @protocol AKGLKViewDelegate <NSObject>
-
 @required
 - (void)akglkview:(AKGLKView *)view drawInRect:(CGRect)rect;
 
