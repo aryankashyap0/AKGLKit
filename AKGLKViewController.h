@@ -38,5 +38,4 @@
 // Initial value is NO.
 @property (nonatomic, getter=isPaused) BOOL paused;
 
-
 @end
