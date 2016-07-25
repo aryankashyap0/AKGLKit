@@ -1,9 +1,8 @@
 //
 //  AKGLKViewController.h
-//  OpenGLESDeepDive
+//  AKGLKKit
 //
-//  Created by Aryan Kashyap on 25/07/2016.
-//  Copyright © 2016 Aryan Kashyap. All rights reserved.
+//  Copyright (c) 2016 Aryan Kashyap. All rights reserved.
 //
 
 /**** This is an alternative for  GLKit's GLKViewController Class ****/
