@@ -7,6 +7,8 @@
 
 #import <GLKit/GLKit.h>
 
+/**** This is class tells you how EAGLContext works.. ****/
+
 @interface AKGLKContext : EAGLContext
 {
     GLKVector4 clearColor;
