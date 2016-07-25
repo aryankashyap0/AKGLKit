@@ -80,18 +80,21 @@
     {  // Delete any buffers previously created in old Context
         [EAGLContext setCurrentContext:context];
         
+        // the default frame buffer
         if (0 != defaultFrameBuffer)
         {
             glDeleteFramebuffers(1, &defaultFrameBuffer);
             defaultFrameBuffer = 0;
         }
         
+        // The color render buffere
         if (0 != colorRenderBuffer)
         {
             glDeleteRenderbuffers(1, &colorRenderBuffer);
             colorRenderBuffer = 0;
         }
         
+        // the depth render buffers
         if (0 != depthRenderBuffer)
         {
             glDeleteRenderbuffers(1, &depthRenderBuffer);
@@ -105,11 +108,13 @@
             context = aContext;
             [EAGLContext setCurrentContext:context];
             
+            // Generate default frame buffer
             glGenFramebuffers(1, &defaultFrameBuffer);
             glBindFramebuffer(
                               GL_FRAMEBUFFER,
                               defaultFrameBuffer);
             
+            // Generate Color Buffers
             glGenRenderbuffers(1, &colorRenderBuffer);
             glBindRenderbuffer(                           
                                GL_RENDERBUFFER,
@@ -149,6 +154,7 @@
     
     [self drawRect:[self bounds]];
     
+   /* Request the native window system display the OpenGL ES renderbuffer bound to <target> */
     [self.context presentRenderbuffer:GL_RENDERBUFFER];
 }
 
@@ -230,7 +236,7 @@
 // Pixel Color Render Buffer
 - (NSInteger)drawableWidth;
 {
-    GLint  backingWidth;
+    GLint          backingWidth;
     
     glGetRenderbufferParameteriv(
                                  GL_RENDERBUFFER,
@@ -246,7 +252,7 @@
 // Pixel Color Render Buffer
 - (NSInteger)drawableHeight;
 {
-    GLint backingHeight;
+    GLint          backingHeight;
     
     glGetRenderbufferParameteriv(
                                  GL_RENDERBUFFER, 
