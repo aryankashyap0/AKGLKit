@@ -1,9 +1,8 @@
 //
-//  AKGLKContext.h
-//  OpenGLES_CH2_1
+//  AKGLKView.h
+//  AKGLKKit
 //
-//  Created by Aryan Kashyap on 25/07/2016.
-//  Copyright © 2016 Aryan Kashyap. All rights reserved.
+//  Copyright (c) 2016 Aryan Kashyap. All rights reserved.
 //
 
 #import <GLKit/GLKit.h>
