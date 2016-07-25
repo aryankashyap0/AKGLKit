@@ -9,6 +9,8 @@
 
 @implementation AKGLKContext
 
+/**** This is class tells you how EAGLContext works.. ****/
+
 /////////////////////////////////////////////////////
 // This method sets clear (background) RGBA color.
 // The clear color is undefined until this method is called.
