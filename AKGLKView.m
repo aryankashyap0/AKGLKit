@@ -231,7 +231,7 @@
 // Pixel Color Render Buffer
 - (NSInteger)drawableWidth;
 {
-    GLint          backingWidth;
+    GLint  backingWidth;
     
     glGetRenderbufferParameteriv(
                                  GL_RENDERBUFFER,
@@ -247,7 +247,7 @@
 // Pixel Color Render Buffer
 - (NSInteger)drawableHeight;
 {
-    GLint          backingHeight;
+    GLint backingHeight;
     
     glGetRenderbufferParameteriv(
                                  GL_RENDERBUFFER, 
