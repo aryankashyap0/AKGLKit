@@ -21,6 +21,7 @@
     
     NSAssert(self == [[self class] currentContext], @"Receiving context required to be current context");
     
+    // specify clear values for the color buffers
     glClearColor(clearColorRGBA.r,
                  clearColorRGBA.g,
                  clearColorRGBA.b,
@@ -47,6 +48,7 @@
     NSAssert(self == [[self class] currentContext],
              @"Receiving context required to be current context");
 
+    // clear buffers to preset values
     glClear(mask);
 }
 
@@ -57,6 +59,7 @@
     NSAssert(self == [[self class] currentContext],
              @"Receiving context required to be current context");
   
+    // enable server-side GL capabilities
     glEnable(capability);
 }
 
@@ -67,6 +70,7 @@
     NSAssert(self == [[self class] currentContext],
              @"Receiving context required to be current context");
     
+   // disable server-side GL capabilities
     glDisable(capability);
 }
 
@@ -75,8 +79,10 @@
 - (void)setBlendSourceFunction:(GLenum)sfactor
            destinationFunction:(GLenum)dfactor;
 {
+    
+ 
+    //  specify pixel arithmetic
     glBlendFunc(sfactor, dfactor);
 }
-
 
 @end
