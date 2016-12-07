@@ -14,7 +14,7 @@
 @synthesize context;
 @synthesize drawableDepthFormat;
 
-/////////////////////////////////////////////////////////////////
+
 // This method returns the CALayer subclass to be used by
 // CoreAnimation with this view
 + (Class)layerClass
@@ -46,7 +46,6 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
 // This method is called automatically to initialize each Cocoa
 // Touch object as the object is unarchived from an
 // Interface Builder .xib or .storyboard file.
@@ -69,7 +68,7 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
+
 // This method sets the receiver's OpenGL ES Context. If the
 // receiver already has a different Context, this method deletes
 // OpenGL ES Frame Buffer resources in the old Context and the
@@ -135,7 +134,7 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
+
 // This method returns the receiver's OpenGL ES Context
 - (EAGLContext *)context
 {
@@ -143,7 +142,7 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
+
 // Calling this method tells the receiver to redraw the contents
 // of its associated OpenGL ES Frame Buffer. This method
 // configures OpenGL ES and then calls -drawRect:
@@ -159,7 +158,7 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
+
 // This method is called automatically whenever the receiver
 // needs to redraw the contents of its associated OpenGL ES
 // Frame Buffer. This method should not be called directly. Call
@@ -174,7 +173,7 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
+
 // This method is called automatically whenever a UIView is
 // resized including just after the view is added to a UIWindow.
 - (void)layoutSubviews
@@ -231,7 +230,7 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
+
 // This method returns the width in pixels of current context's
 // Pixel Color Render Buffer
 - (NSInteger)drawableWidth;
@@ -247,7 +246,7 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
+
 // This method returns the height in pixels of current context's
 // Pixel Color Render Buffer
 - (NSInteger)drawableHeight;
@@ -263,7 +262,7 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
+
 // This method is called automatically when the reference count 
 // for a Cocoa Touch object reaches zero.
 - (void)dealloc
