@@ -23,7 +23,7 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
+
 // This method is designated initializer for the class
 - (id)initWithFrame:(CGRect)frame context:(EAGLContext *)aContext;
 {
